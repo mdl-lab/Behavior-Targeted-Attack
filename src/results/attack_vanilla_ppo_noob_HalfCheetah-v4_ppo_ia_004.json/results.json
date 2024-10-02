@@ -1,0 +1,19 @@
+{
+    "rewards": {
+        "mean": 1638.694568316005,
+        "std": 28.61001676504354,
+        "min": 1578.0158317753328,
+        "max": 1701.1579953926685
+    },
+    "episode_lengths": {
+        "mean": 1000.0,
+        "std": 0.0,
+        "min": 1000.0,
+        "max": 1000.0
+    },
+    "success_rate": 0.0,
+    "total_episodes": 50,
+    "attack_method": "advpolicy",
+    "attack_eps": "same",
+    "deterministic": true
+}

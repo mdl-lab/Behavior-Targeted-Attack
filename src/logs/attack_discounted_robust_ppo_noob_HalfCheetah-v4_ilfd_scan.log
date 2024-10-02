@@ -1,0 +1,1088 @@
+No ROCm runtime is found, using ROCM_HOME='/gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/src/Usage:
+/usr/bin/which.debianutils
+/gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/src/[-a]
+/gs/bs/tga-mdl/yamabe-mdl/implement/SAIA'
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+Job split into 1 part, this is part 1
+Total 9 jobs. Job start 1, end 9
+We will handle 9 jobs.
+python run.py --config-path ../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/000.json
+python run.py --config-path ../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/001.json
+python run.py --config-path ../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/002.json
+python run.py --config-path ../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/003.json
+python run.py --config-path ../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/004.json
+python run.py --config-path ../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/005.json
+python run.py --config-path ../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/006.json
+python run.py --config-path ../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/007.json
+python run.py --config-path ../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/008.json
+thread 8 using cpu [8, 200]
+disabling policy training (train adversary only)
+Running config: {'action_noise_std': 0.1, 'adam_eps': 1e-05, 'adv_adversary_ratio': 1.0, 'adv_adversary_steps': 1, 'adv_clip_eps': 0.2, 'adv_disc_lr': 0.0001, 'adv_entropy_coeff': 1e-05, 'adv_eps': 'same', 'adv_policy_steps': 1, 'adv_ppo_lr_adam': 0.0003, 'adv_q_lr': 'same', 'adv_q_net_type': 'DoubleQNet', 'adv_val_lr': 0.0001, 'advanced_logging': False, 'anneal_lr': True, 'attack_advpolicy_network': 'advpolicy.model', 'attack_eps': 'same', 'attack_method': 'none', 'attack_ratio': 1.0, 'attack_sarsa_action_ratio': 0.5, 'attack_sarsa_network': 'sarsa.model', 'attack_step_eps': 'auto', 'attack_steps': 10, 'batch_size': 256, 'buffer_size': 1000000, 'cg_steps': 10, 'clip_eps': 0.2, 'clip_grad_norm': -1, 'clip_observations': 10.0, 'clip_rewards': 10.0, 'clip_val_eps': 0.2, 'collect_perturbed_states': True, 'cpu': True, 'damping': 0.1, 'demo_episode_size': 20, 'disc_gradient_steps': 1, 'entropy_coeff': 0.0, 'expert_buffer_path': 'demo/Ant-v4_demo.pkl', 'fisher_frac_samples': 0.1, 'force_stop_step': -1, 'game': 'HalfCheetah-v4', 'gamma': 0.99, 'gp_lambda': 10.0, 'gradient_steps': 250, 'history_length': -1, 'initial_std': 1.0, 'initialization': 'orthogonal', 'kl_approximation_iters': -1, 'lambda': 0.95, 'learning_starts': 10000, 'load_model': 'models/discounted_robust_ppo_noob_HalfCheetah-v4.model', 'log_every': 1, 'max_backtrack': 10, 'max_kl': 0.01, 'max_kl_final': 0.01, 'mode': 'adv_ilfd', 'noise_clip': 0.3, 'norm_rewards': 'none', 'norm_states': True, 'num_actors': 1, 'num_minibatches': 32, 'out_dir': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/002', 'policy_activation': 'tanh', 'policy_delay': 2, 'policy_net_type': 'CtsPolicyTD3', 'ppo_epochs': 10, 'ppo_lr': -1, 'ppo_lr_adam': 0.0, 'robust_ppo_beta': 1.0, 'robust_ppo_beta_scheduler_opts': 'same', 'robust_ppo_detach_stdev': False, 'robust_ppo_eps': 0.1, 'robust_ppo_eps_scheduler_opts': 'start=1,length=732', 'robust_ppo_method': 'convex-relax', 'robust_ppo_pgd_steps': 10, 'robust_ppo_reg': 0.1, 'save_frames': False, 'save_frames_path': 'frames/', 'save_iters': 1000, 'save_normalization_factor': False, 'share_weights': False, 'show_env': False, 't': 1000, 'tau': 0.005, 'train_steps': 2400, 'trpo_kl_reduce_func': 'mean', 'use_lstm_val': True, 'val_epochs': 10, 'val_lr': 0.00015, 'value_calc': 'gae', 'value_clipping': True, 'value_multiplier': 0.1, 'value_net_type': 'ValueNet', 'config_path': ['../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan'], 'out_dir_prefix': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan', 'num_splits': 1, 'index': 1, 'start': -1, 'end': -1, 'ncpus': 1, 'start_cpuid': 0, 'adv_policy_only': True, 'deterministic': True, 'no_load_adv_policy': False, 'no_smt': False}
+Logging in: /gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/002/8e9bd8a8-bf7b-4bb3-801a-2a28fdd44335
+Load normalization factors from normalized_envs/HalfCheetah-v4.pkl
+Using activation function ReLU()
+Using activation function ReLU()
+Using activation function ReLU()
+Loading pretrained model models/discounted_robust_ppo_noob_HalfCheetah-v4.model
+Policy runs in deterministic mode. Ignoring Gaussian noise.
+Step 0
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -36.824297 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 1000 / 10000
+policy lr: [0.000299875], q lr: [0.000299875], disc lr: [9.995833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 1.0267932415008545
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+thread 6 using cpu [6, 198]
+disabling policy training (train adversary only)
+Running config: {'action_noise_std': 0.1, 'adam_eps': 1e-05, 'adv_adversary_ratio': 1.0, 'adv_adversary_steps': 1, 'adv_clip_eps': 0.2, 'adv_disc_lr': 0.0001, 'adv_entropy_coeff': 1e-05, 'adv_eps': 'same', 'adv_policy_steps': 1, 'adv_ppo_lr_adam': 0.0003, 'adv_q_lr': 'same', 'adv_q_net_type': 'DoubleQNet', 'adv_val_lr': 0.0001, 'advanced_logging': False, 'anneal_lr': True, 'attack_advpolicy_network': 'advpolicy.model', 'attack_eps': 'same', 'attack_method': 'none', 'attack_ratio': 1.0, 'attack_sarsa_action_ratio': 0.5, 'attack_sarsa_network': 'sarsa.model', 'attack_step_eps': 'auto', 'attack_steps': 10, 'batch_size': 256, 'buffer_size': 1000000, 'cg_steps': 10, 'clip_eps': 0.2, 'clip_grad_norm': -1, 'clip_observations': 10.0, 'clip_rewards': 10.0, 'clip_val_eps': 0.2, 'collect_perturbed_states': True, 'cpu': True, 'damping': 0.1, 'demo_episode_size': 20, 'disc_gradient_steps': 1, 'entropy_coeff': 0.0, 'expert_buffer_path': 'demo/Ant-v4_demo.pkl', 'fisher_frac_samples': 0.1, 'force_stop_step': -1, 'game': 'HalfCheetah-v4', 'gamma': 0.99, 'gp_lambda': 10.0, 'gradient_steps': 250, 'history_length': -1, 'initial_std': 1.0, 'initialization': 'orthogonal', 'kl_approximation_iters': -1, 'lambda': 0.95, 'learning_starts': 10000, 'load_model': 'models/discounted_robust_ppo_noob_HalfCheetah-v4.model', 'log_every': 1, 'max_backtrack': 10, 'max_kl': 0.01, 'max_kl_final': 0.01, 'mode': 'adv_ilfd', 'noise_clip': 0.3, 'norm_rewards': 'none', 'norm_states': True, 'num_actors': 1, 'num_minibatches': 32, 'out_dir': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/001', 'policy_activation': 'tanh', 'policy_delay': 2, 'policy_net_type': 'CtsPolicyTD3', 'ppo_epochs': 10, 'ppo_lr': -1, 'ppo_lr_adam': 0.0, 'robust_ppo_beta': 1.0, 'robust_ppo_beta_scheduler_opts': 'same', 'robust_ppo_detach_stdev': False, 'robust_ppo_eps': 0.05, 'robust_ppo_eps_scheduler_opts': 'start=1,length=732', 'robust_ppo_method': 'convex-relax', 'robust_ppo_pgd_steps': 10, 'robust_ppo_reg': 0.1, 'save_frames': False, 'save_frames_path': 'frames/', 'save_iters': 1000, 'save_normalization_factor': False, 'share_weights': False, 'show_env': False, 't': 1000, 'tau': 0.005, 'train_steps': 2400, 'trpo_kl_reduce_func': 'mean', 'use_lstm_val': True, 'val_epochs': 10, 'val_lr': 0.00015, 'value_calc': 'gae', 'value_clipping': True, 'value_multiplier': 0.1, 'value_net_type': 'ValueNet', 'config_path': ['../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan'], 'out_dir_prefix': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan', 'num_splits': 1, 'index': 1, 'start': -1, 'end': -1, 'ncpus': 1, 'start_cpuid': 0, 'adv_policy_only': True, 'deterministic': True, 'no_load_adv_policy': False, 'no_smt': False}
+Logging in: /gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/001/c2111ef6-8ea5-47da-9bac-60a0a47d5357
+Load normalization factors from normalized_envs/HalfCheetah-v4.pkl
+Using activation function ReLU()
+Using activation function ReLU()
+Using activation function ReLU()
+Loading pretrained model models/discounted_robust_ppo_noob_HalfCheetah-v4.model
+Policy runs in deterministic mode. Ignoring Gaussian noise.
+Step 0
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -43.167339 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 1000 / 10000
+policy lr: [0.000299875], q lr: [0.000299875], disc lr: [9.995833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 1.0268425941467285
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+thread 2 using cpu [2, 194]
+disabling policy training (train adversary only)
+Running config: {'action_noise_std': 0.1, 'adam_eps': 1e-05, 'adv_adversary_ratio': 1.0, 'adv_adversary_steps': 1, 'adv_clip_eps': 0.2, 'adv_disc_lr': 0.0001, 'adv_entropy_coeff': 1e-05, 'adv_eps': 'same', 'adv_policy_steps': 1, 'adv_ppo_lr_adam': 0.0003, 'adv_q_lr': 'same', 'adv_q_net_type': 'DoubleQNet', 'adv_val_lr': 0.0001, 'advanced_logging': False, 'anneal_lr': True, 'attack_advpolicy_network': 'advpolicy.model', 'attack_eps': 'same', 'attack_method': 'none', 'attack_ratio': 1.0, 'attack_sarsa_action_ratio': 0.5, 'attack_sarsa_network': 'sarsa.model', 'attack_step_eps': 'auto', 'attack_steps': 10, 'batch_size': 256, 'buffer_size': 1000000, 'cg_steps': 10, 'clip_eps': 0.2, 'clip_grad_norm': -1, 'clip_observations': 10.0, 'clip_rewards': 10.0, 'clip_val_eps': 0.2, 'collect_perturbed_states': True, 'cpu': True, 'damping': 0.1, 'demo_episode_size': 20, 'disc_gradient_steps': 1, 'entropy_coeff': 0.0, 'expert_buffer_path': 'demo/Ant-v4_demo.pkl', 'fisher_frac_samples': 0.1, 'force_stop_step': -1, 'game': 'HalfCheetah-v4', 'gamma': 0.99, 'gp_lambda': 10.0, 'gradient_steps': 250, 'history_length': -1, 'initial_std': 1.0, 'initialization': 'orthogonal', 'kl_approximation_iters': -1, 'lambda': 0.95, 'learning_starts': 10000, 'load_model': 'models/discounted_robust_ppo_noob_HalfCheetah-v4.model', 'log_every': 1, 'max_backtrack': 10, 'max_kl': 0.01, 'max_kl_final': 0.01, 'mode': 'adv_ilfd', 'noise_clip': 0.3, 'norm_rewards': 'none', 'norm_states': True, 'num_actors': 1, 'num_minibatches': 32, 'out_dir': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/003', 'policy_activation': 'tanh', 'policy_delay': 2, 'policy_net_type': 'CtsPolicyTD3', 'ppo_epochs': 10, 'ppo_lr': -1, 'ppo_lr_adam': 0.0, 'robust_ppo_beta': 1.0, 'robust_ppo_beta_scheduler_opts': 'same', 'robust_ppo_detach_stdev': False, 'robust_ppo_eps': 0.15, 'robust_ppo_eps_scheduler_opts': 'start=1,length=732', 'robust_ppo_method': 'convex-relax', 'robust_ppo_pgd_steps': 10, 'robust_ppo_reg': 0.1, 'save_frames': False, 'save_frames_path': 'frames/', 'save_iters': 1000, 'save_normalization_factor': False, 'share_weights': False, 'show_env': False, 't': 1000, 'tau': 0.005, 'train_steps': 2400, 'trpo_kl_reduce_func': 'mean', 'use_lstm_val': True, 'val_epochs': 10, 'val_lr': 0.00015, 'value_calc': 'gae', 'value_clipping': True, 'value_multiplier': 0.1, 'value_net_type': 'ValueNet', 'config_path': ['../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan'], 'out_dir_prefix': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan', 'num_splits': 1, 'index': 1, 'start': -1, 'end': -1, 'ncpus': 1, 'start_cpuid': 0, 'adv_policy_only': True, 'deterministic': True, 'no_load_adv_policy': False, 'no_smt': False}
+Logging in: /gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/003/81d0da28-a583-49ce-bffe-0edc6812c09e
+Load normalization factors from normalized_envs/HalfCheetah-v4.pkl
+Using activation function ReLU()
+Using activation function ReLU()
+Using activation function ReLU()
+Loading pretrained model models/discounted_robust_ppo_noob_HalfCheetah-v4.model
+Policy runs in deterministic mode. Ignoring Gaussian noise.
+Step 0
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -28.005774 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 1000 / 10000
+policy lr: [0.000299875], q lr: [0.000299875], disc lr: [9.995833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 1.026958703994751
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+thread 5 using cpu [5, 197]
+disabling policy training (train adversary only)
+Running config: {'action_noise_std': 0.1, 'adam_eps': 1e-05, 'adv_adversary_ratio': 1.0, 'adv_adversary_steps': 1, 'adv_clip_eps': 0.2, 'adv_disc_lr': 0.0001, 'adv_entropy_coeff': 1e-05, 'adv_eps': 'same', 'adv_policy_steps': 1, 'adv_ppo_lr_adam': 0.0003, 'adv_q_lr': 'same', 'adv_q_net_type': 'DoubleQNet', 'adv_val_lr': 0.0001, 'advanced_logging': False, 'anneal_lr': True, 'attack_advpolicy_network': 'advpolicy.model', 'attack_eps': 'same', 'attack_method': 'none', 'attack_ratio': 1.0, 'attack_sarsa_action_ratio': 0.5, 'attack_sarsa_network': 'sarsa.model', 'attack_step_eps': 'auto', 'attack_steps': 10, 'batch_size': 256, 'buffer_size': 1000000, 'cg_steps': 10, 'clip_eps': 0.2, 'clip_grad_norm': -1, 'clip_observations': 10.0, 'clip_rewards': 10.0, 'clip_val_eps': 0.2, 'collect_perturbed_states': True, 'cpu': True, 'damping': 0.1, 'demo_episode_size': 20, 'disc_gradient_steps': 1, 'entropy_coeff': 0.0, 'expert_buffer_path': 'demo/Ant-v4_demo.pkl', 'fisher_frac_samples': 0.1, 'force_stop_step': -1, 'game': 'HalfCheetah-v4', 'gamma': 0.99, 'gp_lambda': 10.0, 'gradient_steps': 250, 'history_length': -1, 'initial_std': 1.0, 'initialization': 'orthogonal', 'kl_approximation_iters': -1, 'lambda': 0.95, 'learning_starts': 10000, 'load_model': 'models/discounted_robust_ppo_noob_HalfCheetah-v4.model', 'log_every': 1, 'max_backtrack': 10, 'max_kl': 0.01, 'max_kl_final': 0.01, 'mode': 'adv_ilfd', 'noise_clip': 0.3, 'norm_rewards': 'none', 'norm_states': True, 'num_actors': 1, 'num_minibatches': 32, 'out_dir': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/005', 'policy_activation': 'tanh', 'policy_delay': 2, 'policy_net_type': 'CtsPolicyTD3', 'ppo_epochs': 10, 'ppo_lr': -1, 'ppo_lr_adam': 0.0, 'robust_ppo_beta': 1.0, 'robust_ppo_beta_scheduler_opts': 'same', 'robust_ppo_detach_stdev': False, 'robust_ppo_eps': 0.25, 'robust_ppo_eps_scheduler_opts': 'start=1,length=732', 'robust_ppo_method': 'convex-relax', 'robust_ppo_pgd_steps': 10, 'robust_ppo_reg': 0.1, 'save_frames': False, 'save_frames_path': 'frames/', 'save_iters': 1000, 'save_normalization_factor': False, 'share_weights': False, 'show_env': False, 't': 1000, 'tau': 0.005, 'train_steps': 2400, 'trpo_kl_reduce_func': 'mean', 'use_lstm_val': True, 'val_epochs': 10, 'val_lr': 0.00015, 'value_calc': 'gae', 'value_clipping': True, 'value_multiplier': 0.1, 'value_net_type': 'ValueNet', 'config_path': ['../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan'], 'out_dir_prefix': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan', 'num_splits': 1, 'index': 1, 'start': -1, 'end': -1, 'ncpus': 1, 'start_cpuid': 0, 'adv_policy_only': True, 'deterministic': True, 'no_load_adv_policy': False, 'no_smt': False}
+Logging in: /gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/005/66335106-05f3-45a9-bfc4-5fcdb418e50b
+Load normalization factors from normalized_envs/HalfCheetah-v4.pkl
+Using activation function ReLU()
+Using activation function ReLU()
+Using activation function ReLU()
+Loading pretrained model models/discounted_robust_ppo_noob_HalfCheetah-v4.model
+Policy runs in deterministic mode. Ignoring Gaussian noise.
+Step 0
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -91.631230 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 1000 / 10000
+policy lr: [0.000299875], q lr: [0.000299875], disc lr: [9.995833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 1.0268254280090332
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+thread 1 using cpu [1, 193]
+disabling policy training (train adversary only)
+Running config: {'action_noise_std': 0.1, 'adam_eps': 1e-05, 'adv_adversary_ratio': 1.0, 'adv_adversary_steps': 1, 'adv_clip_eps': 0.2, 'adv_disc_lr': 0.0001, 'adv_entropy_coeff': 1e-05, 'adv_eps': 'same', 'adv_policy_steps': 1, 'adv_ppo_lr_adam': 0.0003, 'adv_q_lr': 'same', 'adv_q_net_type': 'DoubleQNet', 'adv_val_lr': 0.0001, 'advanced_logging': False, 'anneal_lr': True, 'attack_advpolicy_network': 'advpolicy.model', 'attack_eps': 'same', 'attack_method': 'none', 'attack_ratio': 1.0, 'attack_sarsa_action_ratio': 0.5, 'attack_sarsa_network': 'sarsa.model', 'attack_step_eps': 'auto', 'attack_steps': 10, 'batch_size': 256, 'buffer_size': 1000000, 'cg_steps': 10, 'clip_eps': 0.2, 'clip_grad_norm': -1, 'clip_observations': 10.0, 'clip_rewards': 10.0, 'clip_val_eps': 0.2, 'collect_perturbed_states': True, 'cpu': True, 'damping': 0.1, 'demo_episode_size': 20, 'disc_gradient_steps': 1, 'entropy_coeff': 0.0, 'expert_buffer_path': 'demo/Ant-v4_demo.pkl', 'fisher_frac_samples': 0.1, 'force_stop_step': -1, 'game': 'HalfCheetah-v4', 'gamma': 0.99, 'gp_lambda': 10.0, 'gradient_steps': 250, 'history_length': -1, 'initial_std': 1.0, 'initialization': 'orthogonal', 'kl_approximation_iters': -1, 'lambda': 0.95, 'learning_starts': 10000, 'load_model': 'models/discounted_robust_ppo_noob_HalfCheetah-v4.model', 'log_every': 1, 'max_backtrack': 10, 'max_kl': 0.01, 'max_kl_final': 0.01, 'mode': 'adv_ilfd', 'noise_clip': 0.3, 'norm_rewards': 'none', 'norm_states': True, 'num_actors': 1, 'num_minibatches': 32, 'out_dir': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/000', 'policy_activation': 'tanh', 'policy_delay': 2, 'policy_net_type': 'CtsPolicyTD3', 'ppo_epochs': 10, 'ppo_lr': -1, 'ppo_lr_adam': 0.0, 'robust_ppo_beta': 1.0, 'robust_ppo_beta_scheduler_opts': 'same', 'robust_ppo_detach_stdev': False, 'robust_ppo_eps': 0.03, 'robust_ppo_eps_scheduler_opts': 'start=1,length=732', 'robust_ppo_method': 'convex-relax', 'robust_ppo_pgd_steps': 10, 'robust_ppo_reg': 0.1, 'save_frames': False, 'save_frames_path': 'frames/', 'save_iters': 1000, 'save_normalization_factor': False, 'share_weights': False, 'show_env': False, 't': 1000, 'tau': 0.005, 'train_steps': 2400, 'trpo_kl_reduce_func': 'mean', 'use_lstm_val': True, 'val_epochs': 10, 'val_lr': 0.00015, 'value_calc': 'gae', 'value_clipping': True, 'value_multiplier': 0.1, 'value_net_type': 'ValueNet', 'config_path': ['../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan'], 'out_dir_prefix': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan', 'num_splits': 1, 'index': 1, 'start': -1, 'end': -1, 'ncpus': 1, 'start_cpuid': 0, 'adv_policy_only': True, 'deterministic': True, 'no_load_adv_policy': False, 'no_smt': False}
+Logging in: /gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/000/a1a0fca5-bf9d-44d7-ad17-b445dfedca02
+Load normalization factors from normalized_envs/HalfCheetah-v4.pkl
+Using activation function ReLU()
+Using activation function ReLU()
+Using activation function ReLU()
+Loading pretrained model models/discounted_robust_ppo_noob_HalfCheetah-v4.model
+Policy runs in deterministic mode. Ignoring Gaussian noise.
+Step 0
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -48.288525 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 1000 / 10000
+policy lr: [0.000299875], q lr: [0.000299875], disc lr: [9.995833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 1.026698350906372
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+thread 4 using cpu [4, 196]
+disabling policy training (train adversary only)
+Running config: {'action_noise_std': 0.1, 'adam_eps': 1e-05, 'adv_adversary_ratio': 1.0, 'adv_adversary_steps': 1, 'adv_clip_eps': 0.2, 'adv_disc_lr': 0.0001, 'adv_entropy_coeff': 1e-05, 'adv_eps': 'same', 'adv_policy_steps': 1, 'adv_ppo_lr_adam': 0.0003, 'adv_q_lr': 'same', 'adv_q_net_type': 'DoubleQNet', 'adv_val_lr': 0.0001, 'advanced_logging': False, 'anneal_lr': True, 'attack_advpolicy_network': 'advpolicy.model', 'attack_eps': 'same', 'attack_method': 'none', 'attack_ratio': 1.0, 'attack_sarsa_action_ratio': 0.5, 'attack_sarsa_network': 'sarsa.model', 'attack_step_eps': 'auto', 'attack_steps': 10, 'batch_size': 256, 'buffer_size': 1000000, 'cg_steps': 10, 'clip_eps': 0.2, 'clip_grad_norm': -1, 'clip_observations': 10.0, 'clip_rewards': 10.0, 'clip_val_eps': 0.2, 'collect_perturbed_states': True, 'cpu': True, 'damping': 0.1, 'demo_episode_size': 20, 'disc_gradient_steps': 1, 'entropy_coeff': 0.0, 'expert_buffer_path': 'demo/Ant-v4_demo.pkl', 'fisher_frac_samples': 0.1, 'force_stop_step': -1, 'game': 'HalfCheetah-v4', 'gamma': 0.99, 'gp_lambda': 10.0, 'gradient_steps': 250, 'history_length': -1, 'initial_std': 1.0, 'initialization': 'orthogonal', 'kl_approximation_iters': -1, 'lambda': 0.95, 'learning_starts': 10000, 'load_model': 'models/discounted_robust_ppo_noob_HalfCheetah-v4.model', 'log_every': 1, 'max_backtrack': 10, 'max_kl': 0.01, 'max_kl_final': 0.01, 'mode': 'adv_ilfd', 'noise_clip': 0.3, 'norm_rewards': 'none', 'norm_states': True, 'num_actors': 1, 'num_minibatches': 32, 'out_dir': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/007', 'policy_activation': 'tanh', 'policy_delay': 2, 'policy_net_type': 'CtsPolicyTD3', 'ppo_epochs': 10, 'ppo_lr': -1, 'ppo_lr_adam': 0.0, 'robust_ppo_beta': 1.0, 'robust_ppo_beta_scheduler_opts': 'same', 'robust_ppo_detach_stdev': False, 'robust_ppo_eps': 0.4, 'robust_ppo_eps_scheduler_opts': 'start=1,length=732', 'robust_ppo_method': 'convex-relax', 'robust_ppo_pgd_steps': 10, 'robust_ppo_reg': 0.1, 'save_frames': False, 'save_frames_path': 'frames/', 'save_iters': 1000, 'save_normalization_factor': False, 'share_weights': False, 'show_env': False, 't': 1000, 'tau': 0.005, 'train_steps': 2400, 'trpo_kl_reduce_func': 'mean', 'use_lstm_val': True, 'val_epochs': 10, 'val_lr': 0.00015, 'value_calc': 'gae', 'value_clipping': True, 'value_multiplier': 0.1, 'value_net_type': 'ValueNet', 'config_path': ['../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan'], 'out_dir_prefix': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan', 'num_splits': 1, 'index': 1, 'start': -1, 'end': -1, 'ncpus': 1, 'start_cpuid': 0, 'adv_policy_only': True, 'deterministic': True, 'no_load_adv_policy': False, 'no_smt': False}
+Logging in: /gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/007/407b9d2f-d488-47fb-8a3c-f81b7ce8e980
+Load normalization factors from normalized_envs/HalfCheetah-v4.pkl
+Using activation function ReLU()
+Using activation function ReLU()
+Using activation function ReLU()
+Loading pretrained model models/discounted_robust_ppo_noob_HalfCheetah-v4.model
+Policy runs in deterministic mode. Ignoring Gaussian noise.
+Step 0
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 973.383249 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 1000 / 10000
+policy lr: [0.000299875], q lr: [0.000299875], disc lr: [9.995833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 1.0268759727478027
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+thread 7 using cpu [7, 199]
+disabling policy training (train adversary only)
+Running config: {'action_noise_std': 0.1, 'adam_eps': 1e-05, 'adv_adversary_ratio': 1.0, 'adv_adversary_steps': 1, 'adv_clip_eps': 0.2, 'adv_disc_lr': 0.0001, 'adv_entropy_coeff': 1e-05, 'adv_eps': 'same', 'adv_policy_steps': 1, 'adv_ppo_lr_adam': 0.0003, 'adv_q_lr': 'same', 'adv_q_net_type': 'DoubleQNet', 'adv_val_lr': 0.0001, 'advanced_logging': False, 'anneal_lr': True, 'attack_advpolicy_network': 'advpolicy.model', 'attack_eps': 'same', 'attack_method': 'none', 'attack_ratio': 1.0, 'attack_sarsa_action_ratio': 0.5, 'attack_sarsa_network': 'sarsa.model', 'attack_step_eps': 'auto', 'attack_steps': 10, 'batch_size': 256, 'buffer_size': 1000000, 'cg_steps': 10, 'clip_eps': 0.2, 'clip_grad_norm': -1, 'clip_observations': 10.0, 'clip_rewards': 10.0, 'clip_val_eps': 0.2, 'collect_perturbed_states': True, 'cpu': True, 'damping': 0.1, 'demo_episode_size': 20, 'disc_gradient_steps': 1, 'entropy_coeff': 0.0, 'expert_buffer_path': 'demo/Ant-v4_demo.pkl', 'fisher_frac_samples': 0.1, 'force_stop_step': -1, 'game': 'HalfCheetah-v4', 'gamma': 0.99, 'gp_lambda': 10.0, 'gradient_steps': 250, 'history_length': -1, 'initial_std': 1.0, 'initialization': 'orthogonal', 'kl_approximation_iters': -1, 'lambda': 0.95, 'learning_starts': 10000, 'load_model': 'models/discounted_robust_ppo_noob_HalfCheetah-v4.model', 'log_every': 1, 'max_backtrack': 10, 'max_kl': 0.01, 'max_kl_final': 0.01, 'mode': 'adv_ilfd', 'noise_clip': 0.3, 'norm_rewards': 'none', 'norm_states': True, 'num_actors': 1, 'num_minibatches': 32, 'out_dir': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/006', 'policy_activation': 'tanh', 'policy_delay': 2, 'policy_net_type': 'CtsPolicyTD3', 'ppo_epochs': 10, 'ppo_lr': -1, 'ppo_lr_adam': 0.0, 'robust_ppo_beta': 1.0, 'robust_ppo_beta_scheduler_opts': 'same', 'robust_ppo_detach_stdev': False, 'robust_ppo_eps': 0.3, 'robust_ppo_eps_scheduler_opts': 'start=1,length=732', 'robust_ppo_method': 'convex-relax', 'robust_ppo_pgd_steps': 10, 'robust_ppo_reg': 0.1, 'save_frames': False, 'save_frames_path': 'frames/', 'save_iters': 1000, 'save_normalization_factor': False, 'share_weights': False, 'show_env': False, 't': 1000, 'tau': 0.005, 'train_steps': 2400, 'trpo_kl_reduce_func': 'mean', 'use_lstm_val': True, 'val_epochs': 10, 'val_lr': 0.00015, 'value_calc': 'gae', 'value_clipping': True, 'value_multiplier': 0.1, 'value_net_type': 'ValueNet', 'config_path': ['../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan'], 'out_dir_prefix': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan', 'num_splits': 1, 'index': 1, 'start': -1, 'end': -1, 'ncpus': 1, 'start_cpuid': 0, 'adv_policy_only': True, 'deterministic': True, 'no_load_adv_policy': False, 'no_smt': False}
+Logging in: /gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/006/e3795afa-b1a5-48aa-a8ae-d509c3e12d70
+Load normalization factors from normalized_envs/HalfCheetah-v4.pkl
+Using activation function ReLU()
+Using activation function ReLU()
+Using activation function ReLU()
+Loading pretrained model models/discounted_robust_ppo_noob_HalfCheetah-v4.model
+Policy runs in deterministic mode. Ignoring Gaussian noise.
+Step 0
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 751.313749 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 1000 / 10000
+policy lr: [0.000299875], q lr: [0.000299875], disc lr: [9.995833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 1.0268080234527588
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+thread 3 using cpu [3, 195]
+disabling policy training (train adversary only)
+Running config: {'action_noise_std': 0.1, 'adam_eps': 1e-05, 'adv_adversary_ratio': 1.0, 'adv_adversary_steps': 1, 'adv_clip_eps': 0.2, 'adv_disc_lr': 0.0001, 'adv_entropy_coeff': 1e-05, 'adv_eps': 'same', 'adv_policy_steps': 1, 'adv_ppo_lr_adam': 0.0003, 'adv_q_lr': 'same', 'adv_q_net_type': 'DoubleQNet', 'adv_val_lr': 0.0001, 'advanced_logging': False, 'anneal_lr': True, 'attack_advpolicy_network': 'advpolicy.model', 'attack_eps': 'same', 'attack_method': 'none', 'attack_ratio': 1.0, 'attack_sarsa_action_ratio': 0.5, 'attack_sarsa_network': 'sarsa.model', 'attack_step_eps': 'auto', 'attack_steps': 10, 'batch_size': 256, 'buffer_size': 1000000, 'cg_steps': 10, 'clip_eps': 0.2, 'clip_grad_norm': -1, 'clip_observations': 10.0, 'clip_rewards': 10.0, 'clip_val_eps': 0.2, 'collect_perturbed_states': True, 'cpu': True, 'damping': 0.1, 'demo_episode_size': 20, 'disc_gradient_steps': 1, 'entropy_coeff': 0.0, 'expert_buffer_path': 'demo/Ant-v4_demo.pkl', 'fisher_frac_samples': 0.1, 'force_stop_step': -1, 'game': 'HalfCheetah-v4', 'gamma': 0.99, 'gp_lambda': 10.0, 'gradient_steps': 250, 'history_length': -1, 'initial_std': 1.0, 'initialization': 'orthogonal', 'kl_approximation_iters': -1, 'lambda': 0.95, 'learning_starts': 10000, 'load_model': 'models/discounted_robust_ppo_noob_HalfCheetah-v4.model', 'log_every': 1, 'max_backtrack': 10, 'max_kl': 0.01, 'max_kl_final': 0.01, 'mode': 'adv_ilfd', 'noise_clip': 0.3, 'norm_rewards': 'none', 'norm_states': True, 'num_actors': 1, 'num_minibatches': 32, 'out_dir': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/004', 'policy_activation': 'tanh', 'policy_delay': 2, 'policy_net_type': 'CtsPolicyTD3', 'ppo_epochs': 10, 'ppo_lr': -1, 'ppo_lr_adam': 0.0, 'robust_ppo_beta': 1.0, 'robust_ppo_beta_scheduler_opts': 'same', 'robust_ppo_detach_stdev': False, 'robust_ppo_eps': 0.2, 'robust_ppo_eps_scheduler_opts': 'start=1,length=732', 'robust_ppo_method': 'convex-relax', 'robust_ppo_pgd_steps': 10, 'robust_ppo_reg': 0.1, 'save_frames': False, 'save_frames_path': 'frames/', 'save_iters': 1000, 'save_normalization_factor': False, 'share_weights': False, 'show_env': False, 't': 1000, 'tau': 0.005, 'train_steps': 2400, 'trpo_kl_reduce_func': 'mean', 'use_lstm_val': True, 'val_epochs': 10, 'val_lr': 0.00015, 'value_calc': 'gae', 'value_clipping': True, 'value_multiplier': 0.1, 'value_net_type': 'ValueNet', 'config_path': ['../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan'], 'out_dir_prefix': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan', 'num_splits': 1, 'index': 1, 'start': -1, 'end': -1, 'ncpus': 1, 'start_cpuid': 0, 'adv_policy_only': True, 'deterministic': True, 'no_load_adv_policy': False, 'no_smt': False}
+Logging in: /gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/004/3737afcc-472c-45a0-8f20-5cdbde7e7d62
+Load normalization factors from normalized_envs/HalfCheetah-v4.pkl
+Using activation function ReLU()
+Using activation function ReLU()
+Using activation function ReLU()
+Loading pretrained model models/discounted_robust_ppo_noob_HalfCheetah-v4.model
+Policy runs in deterministic mode. Ignoring Gaussian noise.
+Step 0
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 321.284744 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 1000 / 10000
+policy lr: [0.000299875], q lr: [0.000299875], disc lr: [9.995833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 1.0267207622528076
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+thread 0 using cpu [0, 192]
+disabling policy training (train adversary only)
+Running config: {'action_noise_std': 0.1, 'adam_eps': 1e-05, 'adv_adversary_ratio': 1.0, 'adv_adversary_steps': 1, 'adv_clip_eps': 0.2, 'adv_disc_lr': 0.0001, 'adv_entropy_coeff': 1e-05, 'adv_eps': 'same', 'adv_policy_steps': 1, 'adv_ppo_lr_adam': 0.0003, 'adv_q_lr': 'same', 'adv_q_net_type': 'DoubleQNet', 'adv_val_lr': 0.0001, 'advanced_logging': False, 'anneal_lr': True, 'attack_advpolicy_network': 'advpolicy.model', 'attack_eps': 'same', 'attack_method': 'none', 'attack_ratio': 1.0, 'attack_sarsa_action_ratio': 0.5, 'attack_sarsa_network': 'sarsa.model', 'attack_step_eps': 'auto', 'attack_steps': 10, 'batch_size': 256, 'buffer_size': 1000000, 'cg_steps': 10, 'clip_eps': 0.2, 'clip_grad_norm': -1, 'clip_observations': 10.0, 'clip_rewards': 10.0, 'clip_val_eps': 0.2, 'collect_perturbed_states': True, 'cpu': True, 'damping': 0.1, 'demo_episode_size': 20, 'disc_gradient_steps': 1, 'entropy_coeff': 0.0, 'expert_buffer_path': 'demo/Ant-v4_demo.pkl', 'fisher_frac_samples': 0.1, 'force_stop_step': -1, 'game': 'HalfCheetah-v4', 'gamma': 0.99, 'gp_lambda': 10.0, 'gradient_steps': 250, 'history_length': -1, 'initial_std': 1.0, 'initialization': 'orthogonal', 'kl_approximation_iters': -1, 'lambda': 0.95, 'learning_starts': 10000, 'load_model': 'models/discounted_robust_ppo_noob_HalfCheetah-v4.model', 'log_every': 1, 'max_backtrack': 10, 'max_kl': 0.01, 'max_kl_final': 0.01, 'mode': 'adv_ilfd', 'noise_clip': 0.3, 'norm_rewards': 'none', 'norm_states': True, 'num_actors': 1, 'num_minibatches': 32, 'out_dir': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/008', 'policy_activation': 'tanh', 'policy_delay': 2, 'policy_net_type': 'CtsPolicyTD3', 'ppo_epochs': 10, 'ppo_lr': -1, 'ppo_lr_adam': 0.0, 'robust_ppo_beta': 1.0, 'robust_ppo_beta_scheduler_opts': 'same', 'robust_ppo_detach_stdev': False, 'robust_ppo_eps': 0.5, 'robust_ppo_eps_scheduler_opts': 'start=1,length=732', 'robust_ppo_method': 'convex-relax', 'robust_ppo_pgd_steps': 10, 'robust_ppo_reg': 0.1, 'save_frames': False, 'save_frames_path': 'frames/', 'save_iters': 1000, 'save_normalization_factor': False, 'share_weights': False, 'show_env': False, 't': 1000, 'tau': 0.005, 'train_steps': 2400, 'trpo_kl_reduce_func': 'mean', 'use_lstm_val': True, 'val_epochs': 10, 'val_lr': 0.00015, 'value_calc': 'gae', 'value_clipping': True, 'value_multiplier': 0.1, 'value_net_type': 'ValueNet', 'config_path': ['../configs/agent_configs_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan'], 'out_dir_prefix': '../configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan', 'num_splits': 1, 'index': 1, 'start': -1, 'end': -1, 'ncpus': 1, 'start_cpuid': 0, 'adv_policy_only': True, 'deterministic': True, 'no_load_adv_policy': False, 'no_smt': False}
+Logging in: /gs/bs/tga-mdl/yamabe-mdl/implement/SAIA/configs/agents_attack_discounted_robust_ppo_noob_HalfCheetah-v4_ilfd_scan/008/93e29bde-8b9c-480e-b5f8-f8d6f46ad06f
+Load normalization factors from normalized_envs/HalfCheetah-v4.pkl
+Using activation function ReLU()
+Using activation function ReLU()
+Using activation function ReLU()
+Loading pretrained model models/discounted_robust_ppo_noob_HalfCheetah-v4.model
+Policy runs in deterministic mode. Ignoring Gaussian noise.
+Step 0
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 621.148281 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 1000 / 10000
+policy lr: [0.000299875], q lr: [0.000299875], disc lr: [9.995833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 1.026862382888794
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 1
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 960.167881 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 2000 / 10000
+policy lr: [0.00029975], q lr: [0.00029975], disc lr: [9.991666666666666e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4045243263244629
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 1
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 830.753885 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 2000 / 10000
+policy lr: [0.00029975], q lr: [0.00029975], disc lr: [9.991666666666666e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40455150604248047
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 1
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 40.790143 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 2000 / 10000
+policy lr: [0.00029975], q lr: [0.00029975], disc lr: [9.991666666666666e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4054737091064453
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 1
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -47.309635 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 2000 / 10000
+policy lr: [0.00029975], q lr: [0.00029975], disc lr: [9.991666666666666e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4069099426269531
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 1
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 673.474810 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 2000 / 10000
+policy lr: [0.00029975], q lr: [0.00029975], disc lr: [9.991666666666666e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40724897384643555
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 1
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -43.142609 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 2000 / 10000
+policy lr: [0.00029975], q lr: [0.00029975], disc lr: [9.991666666666666e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4077112674713135
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 1
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -32.155568 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 2000 / 10000
+policy lr: [0.00029975], q lr: [0.00029975], disc lr: [9.991666666666666e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40796852111816406
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 1
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -21.428245 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 2000 / 10000
+policy lr: [0.00029975], q lr: [0.00029975], disc lr: [9.991666666666666e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4087636470794678
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 1
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -31.583008 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 2000 / 10000
+policy lr: [0.00029975], q lr: [0.00029975], disc lr: [9.991666666666666e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4116072654724121
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 2
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 910.434831 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 3000 / 10000
+policy lr: [0.000299625], q lr: [0.000299625], disc lr: [9.9875e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41086649894714355
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 2
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 457.791784 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 3000 / 10000
+policy lr: [0.000299625], q lr: [0.000299625], disc lr: [9.9875e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41239070892333984
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 2
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 145.934650 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 3000 / 10000
+policy lr: [0.000299625], q lr: [0.000299625], disc lr: [9.9875e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4143204689025879
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 2
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -44.902758 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 3000 / 10000
+policy lr: [0.000299625], q lr: [0.000299625], disc lr: [9.9875e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4146718978881836
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 2
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -48.308953 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 3000 / 10000
+policy lr: [0.000299625], q lr: [0.000299625], disc lr: [9.9875e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41523289680480957
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 2
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -31.587612 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 3000 / 10000
+policy lr: [0.000299625], q lr: [0.000299625], disc lr: [9.9875e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41517138481140137
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 2
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -20.824061 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 3000 / 10000
+policy lr: [0.000299625], q lr: [0.000299625], disc lr: [9.9875e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4159853458404541
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 2
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -17.077696 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 3000 / 10000
+policy lr: [0.000299625], q lr: [0.000299625], disc lr: [9.9875e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4199411869049072
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 2
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -34.484183 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 3000 / 10000
+policy lr: [0.000299625], q lr: [0.000299625], disc lr: [9.9875e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4190545082092285
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 3
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 851.566082 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 4000 / 10000
+policy lr: [0.00029949999999999996], q lr: [0.00029949999999999996], disc lr: [9.983333333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.39510083198547363
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 3
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 816.131395 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 4000 / 10000
+policy lr: [0.00029949999999999996], q lr: [0.00029949999999999996], disc lr: [9.983333333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.3939995765686035
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 3
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 938.564242 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 4000 / 10000
+policy lr: [0.00029949999999999996], q lr: [0.00029949999999999996], disc lr: [9.983333333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.3961770534515381
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 3
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -48.274479 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 4000 / 10000
+policy lr: [0.00029949999999999996], q lr: [0.00029949999999999996], disc lr: [9.983333333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.3980538845062256
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 3
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -33.910978 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 4000 / 10000
+policy lr: [0.00029949999999999996], q lr: [0.00029949999999999996], disc lr: [9.983333333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.399524450302124
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 3
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -45.794346 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 4000 / 10000
+policy lr: [0.00029949999999999996], q lr: [0.00029949999999999996], disc lr: [9.983333333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4005007743835449
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 3
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -46.161355 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 4000 / 10000
+policy lr: [0.00029949999999999996], q lr: [0.00029949999999999996], disc lr: [9.983333333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.39969587326049805
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 3
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 48.276097 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 4000 / 10000
+policy lr: [0.00029949999999999996], q lr: [0.00029949999999999996], disc lr: [9.983333333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40363168716430664
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 3
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -45.417057 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 4000 / 10000
+policy lr: [0.00029949999999999996], q lr: [0.00029949999999999996], disc lr: [9.983333333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4059131145477295
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 4
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 793.447359 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 5000 / 10000
+policy lr: [0.000299375], q lr: [0.000299375], disc lr: [9.979166666666668e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42029261589050293
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 4
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 599.365192 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 5000 / 10000
+policy lr: [0.000299375], q lr: [0.000299375], disc lr: [9.979166666666668e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4227309226989746
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 4
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 113.660885 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 5000 / 10000
+policy lr: [0.000299375], q lr: [0.000299375], disc lr: [9.979166666666668e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42499494552612305
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 4
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -48.699655 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 5000 / 10000
+policy lr: [0.000299375], q lr: [0.000299375], disc lr: [9.979166666666668e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4227480888366699
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 4
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 944.349468 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 5000 / 10000
+policy lr: [0.000299375], q lr: [0.000299375], disc lr: [9.979166666666668e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41994404792785645
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 4
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -45.655721 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 5000 / 10000
+policy lr: [0.000299375], q lr: [0.000299375], disc lr: [9.979166666666668e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42258429527282715
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 4
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -36.820588 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 5000 / 10000
+policy lr: [0.000299375], q lr: [0.000299375], disc lr: [9.979166666666668e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4250931739807129
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 4
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 995.116600 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 5000 / 10000
+policy lr: [0.000299375], q lr: [0.000299375], disc lr: [9.979166666666668e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42128896713256836
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 4
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -29.431552 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 5000 / 10000
+policy lr: [0.000299375], q lr: [0.000299375], disc lr: [9.979166666666668e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4272918701171875
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 5
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 831.296022 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 6000 / 10000
+policy lr: [0.00029925], q lr: [0.00029925], disc lr: [9.975000000000001e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42540836334228516
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 5
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 913.648421 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 6000 / 10000
+policy lr: [0.00029925], q lr: [0.00029925], disc lr: [9.975000000000001e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4230656623840332
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 5
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 475.688479 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 6000 / 10000
+policy lr: [0.00029925], q lr: [0.00029925], disc lr: [9.975000000000001e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42719340324401855
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 5
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -48.838128 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 6000 / 10000
+policy lr: [0.00029925], q lr: [0.00029925], disc lr: [9.975000000000001e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42721128463745117
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 5
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 961.656776 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 6000 / 10000
+policy lr: [0.00029925], q lr: [0.00029925], disc lr: [9.975000000000001e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42535972595214844
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 5
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -45.859943 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 6000 / 10000
+policy lr: [0.00029925], q lr: [0.00029925], disc lr: [9.975000000000001e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4285855293273926
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 5
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -35.310525 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 6000 / 10000
+policy lr: [0.00029925], q lr: [0.00029925], disc lr: [9.975000000000001e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4292469024658203
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 5
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -49.758676 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 6000 / 10000
+policy lr: [0.00029925], q lr: [0.00029925], disc lr: [9.975000000000001e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.43287038803100586
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 5
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 914.018670 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 6000 / 10000
+policy lr: [0.00029925], q lr: [0.00029925], disc lr: [9.975000000000001e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4238755702972412
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 6
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 795.216910 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 7000 / 10000
+policy lr: [0.00029912499999999997], q lr: [0.00029912499999999997], disc lr: [9.970833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4201953411102295
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 6
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 368.255722 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 7000 / 10000
+policy lr: [0.00029912499999999997], q lr: [0.00029912499999999997], disc lr: [9.970833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42101550102233887
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 6
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 695.954069 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 7000 / 10000
+policy lr: [0.00029912499999999997], q lr: [0.00029912499999999997], disc lr: [9.970833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42060327529907227
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 6
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -47.822602 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 7000 / 10000
+policy lr: [0.00029912499999999997], q lr: [0.00029912499999999997], disc lr: [9.970833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4222853183746338
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 6
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -96.857669 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 7000 / 10000
+policy lr: [0.00029912499999999997], q lr: [0.00029912499999999997], disc lr: [9.970833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42279982566833496
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 6
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -43.855417 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 7000 / 10000
+policy lr: [0.00029912499999999997], q lr: [0.00029912499999999997], disc lr: [9.970833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42215871810913086
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 6
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -37.687156 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 7000 / 10000
+policy lr: [0.00029912499999999997], q lr: [0.00029912499999999997], disc lr: [9.970833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42383718490600586
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 6
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -58.108833 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 7000 / 10000
+policy lr: [0.00029912499999999997], q lr: [0.00029912499999999997], disc lr: [9.970833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.428570032119751
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 6
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -60.551963 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 7000 / 10000
+policy lr: [0.00029912499999999997], q lr: [0.00029912499999999997], disc lr: [9.970833333333334e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4276721477508545
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 7
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 1108.916090 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 8000 / 10000
+policy lr: [0.000299], q lr: [0.000299], disc lr: [9.966666666666667e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4151492118835449
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 7
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 1042.914637 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 8000 / 10000
+policy lr: [0.000299], q lr: [0.000299], disc lr: [9.966666666666667e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4161558151245117
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 7
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 949.948051 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 8000 / 10000
+policy lr: [0.000299], q lr: [0.000299], disc lr: [9.966666666666667e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41753387451171875
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 7
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 1065.591265 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 8000 / 10000
+policy lr: [0.000299], q lr: [0.000299], disc lr: [9.966666666666667e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41670966148376465
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 7
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -46.096254 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 8000 / 10000
+policy lr: [0.000299], q lr: [0.000299], disc lr: [9.966666666666667e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4184854030609131
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 7
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -46.339155 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 8000 / 10000
+policy lr: [0.000299], q lr: [0.000299], disc lr: [9.966666666666667e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42052149772644043
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 7
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -33.854343 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 8000 / 10000
+policy lr: [0.000299], q lr: [0.000299], disc lr: [9.966666666666667e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4215395450592041
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 7
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 928.342348 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 8000 / 10000
+policy lr: [0.000299], q lr: [0.000299], disc lr: [9.966666666666667e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41841626167297363
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 7
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -29.994711 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 8000 / 10000
+policy lr: [0.000299], q lr: [0.000299], disc lr: [9.966666666666667e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4216737747192383
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 8
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 512.694755 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 9000 / 10000
+policy lr: [0.000298875], q lr: [0.000298875], disc lr: [9.9625e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41091489791870117
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 8
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 735.266262 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 9000 / 10000
+policy lr: [0.000298875], q lr: [0.000298875], disc lr: [9.9625e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4106776714324951
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 8
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 349.557503 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 9000 / 10000
+policy lr: [0.000298875], q lr: [0.000298875], disc lr: [9.9625e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41266369819641113
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 8
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 618.055870 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 9000 / 10000
+policy lr: [0.000298875], q lr: [0.000298875], disc lr: [9.9625e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.41303038597106934
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 8
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -48.418704 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 9000 / 10000
+policy lr: [0.000298875], q lr: [0.000298875], disc lr: [9.9625e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4131653308868408
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 8
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -43.439475 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 9000 / 10000
+policy lr: [0.000298875], q lr: [0.000298875], disc lr: [9.9625e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4140431880950928
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 8
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -32.682485 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 9000 / 10000
+policy lr: [0.000298875], q lr: [0.000298875], disc lr: [9.9625e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4137425422668457
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 8
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -165.245964 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 9000 / 10000
+policy lr: [0.000298875], q lr: [0.000298875], disc lr: [9.9625e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.42003965377807617
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 8
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -18.999408 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 9000 / 10000
+policy lr: [0.000298875], q lr: [0.000298875], disc lr: [9.9625e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4204580783843994
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 9
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -293.987645 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 10000 / 10000
+policy lr: [0.00029874999999999997], q lr: [0.00029874999999999997], disc lr: [9.958333333333335e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40476250648498535
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 9
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 363.515889 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 10000 / 10000
+policy lr: [0.00029874999999999997], q lr: [0.00029874999999999997], disc lr: [9.958333333333335e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4031696319580078
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 9
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 847.215338 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 10000 / 10000
+policy lr: [0.00029874999999999997], q lr: [0.00029874999999999997], disc lr: [9.958333333333335e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40302085876464844
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 9
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -95.780600 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 10000 / 10000
+policy lr: [0.00029874999999999997], q lr: [0.00029874999999999997], disc lr: [9.958333333333335e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40775299072265625
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 9
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -47.110283 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 10000 / 10000
+policy lr: [0.00029874999999999997], q lr: [0.00029874999999999997], disc lr: [9.958333333333335e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40740489959716797
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 9
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -46.238784 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 10000 / 10000
+policy lr: [0.00029874999999999997], q lr: [0.00029874999999999997], disc lr: [9.958333333333335e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40866780281066895
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 9
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -34.379826 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 10000 / 10000
+policy lr: [0.00029874999999999997], q lr: [0.00029874999999999997], disc lr: [9.958333333333335e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4079113006591797
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 9
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: 117.065958 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 10000 / 10000
+policy lr: [0.00029874999999999997], q lr: [0.00029874999999999997], disc lr: [9.958333333333335e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.4103367328643799
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
+
+Step 9
+skipping policy training because learning rate is 0. adv_policy_steps and adv_adversary_steps ignored.
+++++++++ Adversary training ++++++++++
+Current mean reward: -36.253895 | mean episode length: 1000.000000
+Skipping policy training because number of experiences is less than learning_starts: 10000 / 10000
+policy lr: [0.00029874999999999997], q lr: [0.00029874999999999997], disc lr: [9.958333333333335e-05]
+Policy Loss: 0, | Q Loss: 0, | Disc Loss: 0
+Time elapsed (s): 0.40995359420776367
+Agent stdevs: 1.1051711
+--------------------------------------------------------------------------------
