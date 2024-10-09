@@ -403,8 +403,6 @@ def ilfd_step(replay_buffer, expert_buffer, policy_net, policy_net_target, q_net
 
     ### Discriminator training ###
 
-    # TODO : 基本的にGenとDiscの更新のバランスはGRADIENT_STEPSによって調整する。前回は、更新するステップの頻度を変えていたが、今回は更新するステップは固定（おそらく1000)
-    # ただし、それでいいかは再考するべき
     discriminator_losses = []
     for _ in range(params.DISC_GRADIENT_STEPS):
         # Sample replay buffer
@@ -477,8 +475,6 @@ def ilfd_step(replay_buffer, expert_buffer, policy_net, policy_net_target, q_net
             # Select action according to target policy. sample method outputs the action added with noise
             next_actions_pds = policy_net_target(batch.next_states)
             next_actions = policy_net_target.sample(next_actions_pds)
-            # TODO : バッファー内のactionのスケールを確認する。[-1, 1]であった場合は、SB3と同じようにnext_actionsをclampによってスケーリングする。
-            # 現在はactionのスケールは[-1, 1]ではないとして実装している
 
             # Compute the next Q-values: min over all critics targets
             q1_target, q2_target = q_net_target(batch.next_states, next_actions)
@@ -486,9 +482,6 @@ def ilfd_step(replay_buffer, expert_buffer, policy_net, policy_net_target, q_net
             next_q_values, _ = ch.min(next_q_values, dim=1, keepdim=True)
             target_q_values = batch.rewards + params.GAMMA * next_q_values
             # target_q_values = batch.rewards + batch.not_dones * params.GAMMA * next_q_values
-            # TODO : SB3 issue #633 についての問題と同様に、donesを考慮するべきかを再考する
-            # MetaWorldは時間制限付きのため、最終状態のときに次状態のQ値を含めないと、最終状態に遷移することを避けるかもしれない。
-            # not_donesによる判定をなくすことにより、常に次状態の価値を考えることになるため、最終状態を避けずに正しく遷移することが予想される
 
         # Get current Q-values estimates for each critic network
         current_q_values = q_net(batch.states, batch.actions)
@@ -497,15 +490,6 @@ def ilfd_step(replay_buffer, expert_buffer, policy_net, policy_net_target, q_net
         q_loss = sum([F.mse_loss(current_q, target_q_values) for current_q in current_q_values])
         assert isinstance(q_loss, ch.Tensor)
         q_losses.append(q_loss.item())
-
-        if n_updates == 999:
-            print("###")
-            print(f"batch size {replay_buffer.get_size()} {replay_buffer.pos}")
-            print(f"batch.rewards {batch.rewards.size()} {batch.rewards[:3]}")
-            print(f"next_q_values {next_q_values.size()} {next_q_values[:3]}")
-            print(f"target_q_values {target_q_values.size()} {target_q_values[:3]}")
-            print(f"current_q_values {current_q_values[0].size()} {current_q_values[0][:3]}")
-            print(f"q_loss {F.mse_loss(current_q_values[0][:3], target_q_values[:3]).item()}")
 
         # Optimize the Q networks
         if params.Q_ADAM is None:
@@ -565,10 +549,10 @@ def ilfo_step(replay_buffer, expert_buffer, policy_net, policy_net_target, q_net
 
     ### Discriminator training ###
 
-    # TODO : OPOLOの論文から, Inverse action modelを実装する.
+    """
+    We implemented the inverse action model, but we did not confirm any improvement in performance, so we have omitted it from this implementation.
+    """
 
-    # TODO : 基本的にGenとDiscの更新のバランスはGRADIENT_STEPSによって調整する。前回は、更新するステップの頻度を変えていたが、今回は更新するステップは固定（おそらく1000)
-    # ただし、それでいいかは再考するべき
     discriminator_losses = []
     for _ in range(params.DISC_GRADIENT_STEPS):
         # Sample replay buffer
@@ -641,8 +625,6 @@ def ilfo_step(replay_buffer, expert_buffer, policy_net, policy_net_target, q_net
             # Select action according to target policy. sample method outputs the action added with noise
             next_actions_pds = policy_net_target(batch.next_states)
             next_actions = policy_net_target.sample(next_actions_pds)
-            # TODO : バッファー内のactionのスケールを確認する。[-1, 1]であった場合は、SB3と同じようにnext_actionsをclampによってスケーリングする。
-            # 現在はactionのスケールは[-1, 1]ではないとして実装している
 
             # Compute the next Q-values: min over all critics targets
             q1_target, q2_target = q_net_target(batch.next_states, next_actions)
@@ -650,9 +632,6 @@ def ilfo_step(replay_buffer, expert_buffer, policy_net, policy_net_target, q_net
             next_q_values, _ = ch.min(next_q_values, dim=1, keepdim=True)
             target_q_values = batch.rewards + params.GAMMA * next_q_values
             # target_q_values = batch.rewards + batch.not_dones * params.GAMMA * next_q_values
-            # TODO : SB3 issue #633 についての問題と同様に、donesを考慮するべきかを再考する
-            # MetaWorldは時間制限付きのため、最終状態のときに次状態のQ値を含めないと、最終状態に遷移することを避けるかもしれない。
-            # not_donesによる判定をなくすことにより、常に次状態の価値を考えることになるため、最終状態を避けずに正しく遷移することが予想される
 
         # Get current Q-values estimates for each critic network
         current_q_values = q_net(batch.states, batch.actions)
@@ -661,15 +640,6 @@ def ilfo_step(replay_buffer, expert_buffer, policy_net, policy_net_target, q_net
         q_loss = sum([F.mse_loss(current_q, target_q_values) for current_q in current_q_values])
         assert isinstance(q_loss, ch.Tensor)
         q_losses.append(q_loss.item())
-
-        if n_updates == 999:
-            print("###")
-            print(f"batch size {replay_buffer.get_size()} {replay_buffer.pos}")
-            print(f"batch.rewards {batch.rewards.size()} {batch.rewards[:3]}")
-            print(f"next_q_values {next_q_values.size()} {next_q_values[:3]}")
-            print(f"target_q_values {target_q_values.size()} {target_q_values[:3]}")
-            print(f"current_q_values {current_q_values[0].size()} {current_q_values[0][:3]}")
-            print(f"q_loss {F.mse_loss(current_q_values[0][:3], target_q_values[:3]).item()}")
 
         # Optimize the Q networks
         if params.Q_ADAM is None:
