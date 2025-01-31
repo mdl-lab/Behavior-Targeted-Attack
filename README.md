@@ -1,5 +1,5 @@
-# Robust Deep Reinforcement Learning against ADVERSARIAL BEHAVIOR MANIPULATION
-This is the official code for "Robust Deep Reinforcement Learning against ADVERSARIAL BEHAVIOR MANIPULATION" in ICLR2025
+# Robust Deep Reinforcement Learning against Adversarial Behavior Manipulation
+This is the official code for "Robust Deep Reinforcement Learning against Adversarial Behavior Manipulation" in ICML2025
 
 This project is developed using CUDA 12.4, PyTorch 1.12.1, python 3.10.
 
