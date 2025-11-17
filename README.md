@@ -1,5 +1,5 @@
 # Robust Deep Reinforcement Learning against Adversarial Behavior Manipulation
-This is the official code for "Robust Deep Reinforcement Learning against Adversarial Behavior Manipulation" in NeurIPS2025
+This is the official code for "Robust Deep Reinforcement Learning against Adversarial Behavior Manipulation" in ICLR2026
 
 This project is developed using CUDA 12.4, PyTorch 1.12.1, python 3.10.
 
